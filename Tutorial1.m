@@ -32,5 +32,10 @@ a = zeros(1, n-1);
 for i = 1:n-1
     a(i) = t(i+1)-t(i);
 end
-
+t
 plot(a);
+
+%% Vectorised Question 3
+figure(3)
+y = t(2:n-1) - t(1:n-2);
+plot(y)
