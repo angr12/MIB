@@ -23,6 +23,8 @@ plot(t_arr,store);
 %%Q1 analytical
 x2 = 5*exp(-0.25*t_arr);
 plot(t_arr,x2, "r");
+hold off
+
 
 %mse:
 error = 0; %initialise error var to add to 
