@@ -1,0 +1,17 @@
+%%Q1
+
+% plot the solution using eulers
+[t,x] = euler_func(0.25,0.01,5,0, 10);
+plot(t,x)
+
+%find mse
+x2  = 5*exp(-0.25*t);
+
+mse1 = mse_func(x,x2);
+disp(mse1); % returns 3.4228e-0.6
+
+
+%%Q2
+
+[t2,x3] = euler_func(0.25, 0.00);
+plot(t,x)
